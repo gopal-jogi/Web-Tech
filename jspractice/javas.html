@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascipt</title>
+ 
+</head>
+<body>
+    <script>
+        
+        let calc=function(a,b,calType)
+        {
+            let res=0;
+            if(calType==="add")
+            {
+                // res=a+b
+                res=sum(a,b)
+            }
+            else if(calType==="mul")
+            {
+                // res=a*b
+                res=mul(a,b)
+            }
+            return res;
+        }
+        let x=calc(2,3,"mul")
+        console.log(x)
+
+        function sum(a,b){
+            return a+b;
+        }
+        function mul(a,b){
+            return a*b;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Form</title>
+    <link rel="stylesheet" href="../font/fontawesome/fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>
+        body
+        {
+            background:url(../img/sun3.jpg) ;
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+        }
+        #reg-form
+        {
+            background:linear-gradient(45deg,rgb(13,96,160),rgb(116,79,143),rgb(255,203,0));
+            text-align: center;
+            width: 350px;
+            margin: 100px auto;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow:0 0 10px white;
+        }
+        .user-form>input[type="text"],
+        .user-form>input[type="password"],
+        textarea
+        {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            padding: 20px 30px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid ;
+        }
+        ::placeholder
+        {
+            color: white;
+            
+        }
+        .user-form>input[type="submit"]
+        {
+            background:linear-gradient(45deg,rgb(13,96,160),rgb(116,79,143),rgb(255,203,0));
+            color: white;
+            border: none;
+            outline: none;
+            width:250px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            
+        }
+        .user-form>input[type="submit"]:hover
+        {
+            cursor: pointer;
+            box-shadow: 0 0 10px white;
+        }
+        .fa
+        {
+            color:white;
+            font-size: 100px;
+            margin-top: -65px;
+            border: 3px solid rgb(13,96,160);
+            border-radius: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="reg-form">
+        <div class="icon">
+            <i class="fa fa-user-circle"></i>
+        </div>
+        <form action="" method="post">
+            <div class="user-form">
+                <input type="text" placeholder="Enter Username">
+            </div>
+            <div class="user-form">
+                <input type="text" placeholder="Enter Email">
+            </div>
+            <div class="user-form">
+                <input type="password" placeholder="Enter Password">
+            </div>
+            <div class="user-form">
+                <input type="password" placeholder="Enter Confirm Password">
+            </div>
+            <div class="user-form">
+                <textarea  placeholder="Enter Description"></textarea>  
+            </div>
+            <div class="user-form">
+                <input type="submit" value="Register Here">
+            </div>
+                
+            
+        </form>
+    </div>
+</body>
+</html>

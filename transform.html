@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:600px;
+            height:400px;
+            margin: 100px auto;
+            border-radius: 10px;
+            border: 5px solid red; 
+            overflow: hidden;
+            position: relative;  
+        }
+        div:hover{
+            cursor: pointer;
+        }
+        div>img{
+            width: inherit;
+            height: inherit;
+            border-radius: 10px;
+            transition: all 1s linear 2s;
+        }
+        div:hover>img{
+            transform: scale(1.5,1.5);
+        }
+        div>#cur{
+            background-color: #fff;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin: 0px;
+            border: none;
+            transition: all 1s linear 1s;
+        }
+        div:hover>#cur{
+            transform:translateY(-100%);
+        }
+        div>#left{
+            background: #fff url(img/op5.jfif);
+            background-size:100% 100%;
+            position: absolute;
+            margin: 0px;
+            top: 0px;
+            left: 0px;
+            border: none;
+            width: 50%;
+            transform-origin: left;
+            transition: all 1s linear 0s;
+        }
+        div:hover>#left{
+            transform: perspective(200px) rotateY(100deg);
+        }
+        div>#right{
+            background: #fff url(img/op6.jfif);
+            background-size:100% 100%;
+            position: absolute;
+            margin: 0px;
+            top: 0px;
+            left: 50%;
+            border: none;
+            width: 50%;
+            transform-origin: right;
+            transition: all 1s linear 0s;
+        }
+        div:hover>#right{
+            transform: perspective(200px) rotateY(-100deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img/two.jpg" alt="image">
+        <div id="cur">
+            <img src="img/op4.jfif" alt="">
+        </div>
+        <div id="left">
+            <!-- <img src="img/op3.jfif" alt=""> -->
+        </div>
+        <div id="right">
+            <!-- <img src="img/op2.jfif" alt=""> -->
+        </div>
+    </div>
+</body>
+</html>

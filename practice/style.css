@@ -1,0 +1,104 @@
+*
+{
+    margin: 0px;
+}
+body
+{
+    font-size: 20px;
+} 
+/* Header Scetion */
+header
+{
+    background: linear-gradient(45deg,orange,white,green);
+
+}
+header>h1
+{
+    color: white;
+    padding: 10px;
+} 
+/* Nav Bar */
+nav
+{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+nav>a
+{
+    color: white;
+    text-decoration: none;
+    margin: 25px;
+    text-transform: uppercase;
+}
+nav>a:hover
+{   
+    text-decoration: underline;
+} 
+
+/* Side Bar */
+aside
+{
+    background: linear-gradient(45deg, orange, white, green);
+    text-align: center;
+    width: 200px;
+    height: 570px;
+    float: left;
+}
+aside>a
+{   
+    display: block;
+    color: blue;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    
+}
+aside>a:hover
+{
+    text-decoration: underline;
+} 
+/* Main Section */
+section
+{
+    background-color: aqua;
+    height: 550px;
+    margin-left: 200px;
+    padding: 10px 20px;
+    
+}
+section>article
+{
+    border: 2px solid black;
+    padding: 8px;
+    margin: 2px;
+    padding-bottom: 10px;
+}
+button
+{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+} 
+/* Footer Section */
+footer 
+{
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(45deg, orange, white, green);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

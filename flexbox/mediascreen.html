@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        div>h1{
+            display: none;
+        }
+        @media (min-width:0px) and (max-width:500px) {
+            body{
+                background-color: rgb(248, 122, 122);
+            }
+            div>h1:first-child{
+                text-align: center;
+                display: block;
+                color: white;
+            }
+        }
+        @media (min-width:501px) and (max-width:800px) {
+            body{
+                background-color: rgb(64, 234, 249);
+            }
+            div>h1:nth-child(2){
+                text-align: center;
+                display: block;
+                color: white;
+            }
+        }
+        @media (min-width:801px) and (max-width:1000px) {
+            body{
+                background-color: rgb(249, 64, 187);
+            }
+            div>h1:nth-child(3){
+                text-align: center;
+                display: block;
+                color: white;
+            }
+        }
+        @media (min-width:1001px){
+            body{
+                background-color: rgb(215, 247, 35);
+            }
+            div>h1:last-child{
+                text-align: center;
+                display: block;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mobile screen</h1>
+        <h1>Tab screen</h1> 
+        <h1>Laptop screen</h1>
+        <h1>TV screen</h1> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background:center url(../img/stadium.avif) repeat;
+    background-size: cover;
+    position: relative;
+}
+section{
+    height: 100vh;
+    
+    /* padding: 10px; */
+    /* margin-top: 50px;
+    margin-bottom: auto; */
+}
+section>.player{
+    float: left;
+}
+section>.ball{
+    height: 50px;
+    animation: animate 5s linear 0S infinite;
+    position: relative;
+}
+
+/* .ball{
+    max-width: 300px;
+    position: relative;
+    animation: animate 5s linear 0S infinite;
+} */
+
+@keyframes animate{
+    0%{
+        top:250px;
+        left: 0px;
+        /* transform: rotate(0deg); */
+    }
+    25%{
+        top: 500px;
+        left: 300px;
+        /* transform: rotate(90deg);*/
+    }
+    50%{
+        top:20px;
+        left: 600px;
+        /* transform: rotate(90deg); */
+    }
+    75%{
+        top: 500px;
+        left: 900px;
+        /* transform: rotate(90deg); */
+    }
+    100%{
+        top:255px;
+        left:1300px;
+        /* transform: rotate(90deg); */
+    }
+}

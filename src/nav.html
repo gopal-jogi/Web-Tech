@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nav Bar</title>
+    <style>
+        *
+        {
+            margin: 0px;
+        }
+        div
+        {
+            background-color: rgb(21, 13, 13);
+            text-align: center;
+            padding: 15px;
+        }
+        div>a
+        {
+            background-color:orange;
+            text-decoration: none;
+            color: white;  
+            padding: 7px 10px;
+            display: inline-block;
+            width: 100px;
+            border-radius: 5px 10px;
+        }
+        div>a:hover
+        {
+            box-shadow: 0 0 10px white;
+        }
+        table
+        {
+            /* margin-left:100px ; */
+            background-color:rgb(235, 193, 115);
+
+        }
+        tr>td
+        {
+            background-color: aliceblue;
+            text-align: center;
+            width: 100px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Updates</a>
+        <a href="#">Gallary</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <h1><u>Student Information:-</u></h1>
+    <table  cellspacing="10px">
+        <thead >
+            <tr>
+                <td>BatchCode</td>
+                <td>SName</td>
+                <td colspan="2">SCouces</td> 
+                <td>Duration</td> 
+            </tr>
+        </thead>
+        <tr>
+            <td rowspan="3">PTD_M4</td>
+            <td>Akshay</td>
+            <td>python</td>
+            <td>html</td>
+            <td rowspan="3">5 & 6 Months</td>
+        </tr>
+        <tr>
+            <td>Yusuf</td>
+            <td>Core Jave</td>
+            <td>html/css</td>
+        </tr>
+        <tr>
+            <td>PP</td>
+            <td>MERN</td>
+            <td>JS</td>
+        </tr>
+    </table>
+</body>
+</html>

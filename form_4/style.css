@@ -1,0 +1,31 @@
+body
+{
+    background-color: black;
+}
+#res-form
+{
+    background-color: white;
+    width: 500px;
+    margin: 20px auto;
+    font-size: 20px;
+}
+table
+{
+    width: 100%;
+}
+tr>td
+{
+    padding: 5px 23px;
+}
+tr>td>input[ type="text"],
+tr>td>input[ type="password"],
+select
+{
+    padding: 5px 50px;
+}
+tr>td>input[ type="submit"],
+tr>td>input[ type="reset"]
+{
+    padding: 5px 20px;
+}
+

@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+}
+body{
+    font-size: 20px;
+}
+/* header section */
+header{
+    background:linear-gradient(45deg,orange,white,green);
+}
+header>h1{
+    color: blue;
+    padding: 10px 20px;
+}
+/* Nav section */
+nav{
+   background-color: black;
+   text-align: center;
+   padding: 10px;
+}
+nav>a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+}
+nav>a:hover{
+    text-decoration: underline;
+}
+
+/* sidebar section */
+aside{
+    background:linear-gradient(90deg,orange,white,green);
+    width: 200px;
+    height: 526px;
+    text-align: center;
+    float: left;
+}
+aside>a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: blue;
+    padding: 20px;
+}
+aside>a:hover{
+    text-decoration: underline;
+}
+
+/* main section */
+section{
+    margin-left: 200px;
+    background-color: #789bd3;
+    padding: 30px 10px;
+}
+article{
+    border: 2px solid black;
+    padding: 10px;
+    height: 120px;
+
+}
+/* footer section */
+footer{
+    background:linear-gradient(45deg,orange,white,green);
+    text-align: center;
+}

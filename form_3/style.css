@@ -1,0 +1,30 @@
+body
+{
+    background-color: black;
+}
+#res-form
+{
+    background-color:orange;
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px  10px  10px 50px;
+}
+table
+{
+    width: 100%;
+}
+tr>td>h3
+{
+    
+    margin-bottom: 10px;
+}
+tr>td>h3>input,
+tr>td>h3>select
+{
+    padding: 3px 30px 3px 5px;
+}
+tr>td>input
+{
+    padding: 5px 20px;
+    font-size: 15px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up</title>
+    <link rel="stylesheet" href="../Bs/bs/css/bootstrap.css">
+    <link rel="stylesheet" href="../font/fontawesome/fontawesome-free-6.4.2-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-fluid  mt-2 ">
+        <button class="btn btn-md btn-success" data-bs-target="#log" data-bs-toggle="modal">LogIn</button>
+        <button class="btn btn-md btn-danger " data-bs-target="#reg" data-bs-toggle="modal">Register</button>
+
+
+        <div class="modal" id="log">
+            <div class="modal-dialog ">
+                <div class="modal-content ">
+                    <div class="modal-header bg-success">
+                        <h2 class="text-white ">LogIn Here</h2>
+
+                        <button class="close" data-bs-dismiss="modal"><i class="fa fa-times-circle"></i></button>
+                    </div>
+                    <div class="modal-body ">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-success ">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal" id="reg">
+            <div class="modal-dialog ">
+                <div class="modal-content ">
+                    <div class="modal-header bg-info ">
+                        <h2 class="text-white ">Register Here</h2>
+
+                        <button class="close" data-bs-dismiss="modal"><i class="fa fa-times-circle"></i></button>
+                    </div>
+                    <div class="modal-body ">
+                      <form>
+
+                        <div class="form-outline mb-4">
+                          <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example1cg">Your Name</label>
+                        </div>
+        
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example3cg">Your Email</label>
+                        </div>
+        
+                        <div class="form-outline mb-4">
+                          <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example4cg">Password</label>
+                        </div>
+        
+                        <div class="form-outline mb-4">
+                          <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                        </div>
+        
+                        <div class="form-check d-flex justify-content-center mb-5">
+                          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                          <label class="form-check-label" for="form2Example3g">
+                            I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                          </label>
+                        </div>
+        
+                        <div class="d-flex justify-content-center">
+                          <button type="button"
+                            class="btn btn-info  btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                        </div>
+        
+                        <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#log"
+                            class="fw-bold text-body"><u>Login here</u></a></p>
+        
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../Bs/bs/js/bootstrap.bundle.js"></script>
+
+</html>
