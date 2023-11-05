@@ -22,7 +22,7 @@ section>.player{
 section>.ball{
     height: 50px;
     animation: animate 5s linear 0S infinite;
-    position: relative;
+    position: absolute;
 }
 
 /* .ball{
