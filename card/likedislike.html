@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Dislike Cards Example</title>
+    <link rel="stylesheet" href="../Bs/bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font/fontawesome/fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>
+        body {
+            margin: 40px;
+        }
+        .card-img-top {
+            height: 250px; 
+            object-fit: cover;  
+        }
+
+        .btn {
+            cursor: pointer;
+            outline: none;
+            color: #AAA;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light pt-5 pb-5 shadow-sm">
+        <div class="container">
+            <h3 class="text-uppercase border-bottom mb-4">Like Dislike Cards Example</h3>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-4 mb-3">
+                <div class="card">
+                    <img src="../img/two.jpg" class="card-img-top" alt="Monck D Luffy">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title mb-3">Monck D Luffy</h5>
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-success thumbs-up-btn" data-card="1">
+                                <i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-danger thumbs-down-btn" data-card="1">
+                                <i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="mt-2">
+                            <span class="like-count">0</span>
+                            <span class="dislike-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-4 mb-3">
+                <div class="card">
+                    <img src="../img/op5.jfif" class="card-img-top" alt="Porto Timoni Double Beach">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title mb-3">Roronoa Zoro</h5>
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-success thumbs-up-btn" data-card="2">
+                                <i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-danger thumbs-down-btn" data-card="2">
+                                <i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="mt-2">
+                            <span class="like-count">0</span>
+                            <span class="dislike-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-4 mb-3">
+                <div class="card">
+                    <img src="../img/op6.jfif" class="card-img-top" alt="Tritons Fountain">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title mb-3">Nami</h5>
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-success thumbs-up-btn" data-card="3">
+                                <i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-danger thumbs-down-btn" data-card="3">
+                                <i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="mt-2">
+                            <span class="like-count">0</span>
+                            <span class="dislike-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-4 offset-lg-4">
+                <button class="btn btn-primary w-100 total-btn">Total: <span class="total-count">0</span></button>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js">
+        
+    </script>
+</body>
+
+</html>

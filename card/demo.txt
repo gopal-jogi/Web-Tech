@@ -1,0 +1,37 @@
+// let likeButtons = document.querySelectorAll('.thumbs-up-btn');
+// let dislikeButtons = document.querySelectorAll('.thumbs-down-btn');
+// let likeCountElements = document.querySelectorAll('.like-count');
+// let dislikeCountElements = document.querySelectorAll('.dislike-count');
+// let totalButton = document.querySelector('.total-btn');
+
+// let totalLikes = Number(localStorage.getItem('totalLikes')) || 0;
+// let totalDislikes = Number(localStorage.getItem('totalDislikes')) || 0;
+
+// updateTotalCounts();
+
+// likeButtons.forEach((button, index) => {
+//     button.addEventListener('click', () => {
+//         let cardNumber = button.getAttribute('data-card');
+//         likeCountElements[cardNumber - 1].textContent++;
+//         totalLikes++;
+//         updateLocalStorage();
+//     });
+// });
+
+// dislikeButtons.forEach((button, index) => {
+//     button.addEventListener('click', () => {
+//         let cardNumber = button.getAttribute('data-card');
+//         dislikeCountElements[cardNumber - 1].textContent++;
+//         totalDislikes++;
+//         updateLocalStorage();
+//     });
+// });
+
+// function updateLocalStorage() {
+//     localStorage.setItem('totalLikes', totalLikes);
+//     localStorage.setItem('totalDislikes', totalDislikes);
+// }
+
+// function updateTotalCounts() {
+//     totalCountElement.textContent = `Likes: ${totalLikes} | Dislikes: ${totalDislikes}`;
+// }

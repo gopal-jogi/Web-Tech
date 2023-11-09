@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let span_1=document.createElement('span')
+        console.log(span_1);
+        span_1.innerText="Javascript";
+        span_1.style.color="red";
+        span_1.style.backgroundColor="yellow"
+
+        let span_2=document.createElement('span')
+        console.log(span_2);
+        span_2.innerText="Properties";
+        span_2.style.color="blue";
+        span_2.style.backgroundColor="green"
+
+        let h1Tag=document.createElement('h1');
+        console.log(h1Tag);
+
+        h1Tag.appendChild(span_1);
+        h1Tag.appendChild(span_2);
+
+        let divTag=document.createElement('div');
+        divTag.appendChild(h1Tag);
+
+        document.body.appendChild(divTag);
+    </script>
+</body>
+</html>

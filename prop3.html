@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee Name:--</h1>
+    <div id="display">
+
+    </div>
+    <script>
+        let empName=["akash","prasant","harashad","shiva"]
+        let str=`<ol>`;
+        for(let ename of empName)
+        {
+            str=str+`<li>${ename}</li>`;
+
+        }
+        str+=`</ol>`;
+
+        let divTag=document.getElementById('display');
+        divTag.innerHTML=str;
+    </script>
+</body>
+</html>

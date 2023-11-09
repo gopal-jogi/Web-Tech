@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bs/bs/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header bg-primary">
+                <h1>Login form</h1>
+            </div>
+            <div class="card-body">
+                <form action="" id="login-form">
+                    <div class="from-group mt-2 ">
+                        <input type="text" placeholder="Enter usernamer" class="from-control" id="'usn-box">
+                    </div>
+                    <div class="from-group mt-2 ">
+                        <input type="password" placeholder="Enter password" class="from-control" id="'pw-box">
+                    </div>
+                    <div class="from-group mt-2">
+                        <input type="submit" name="" class="btn btn-primary " id="">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let fromTag=document.getElementById("login-from");
+        let usnbox=document.getElementById("usn-box");
+        let pwbox=document.getElementById("pw-box");
+
+        fromTag.addEventListener('submit',function(event)
+        {
+            event.preventDefault();
+            let usernamer = usnbox.value;
+            let password = pwbox.value;
+            console.log(`Enter Username is ${usernamer}`)
+            console.log(`Enter Username is ${password}`)
+        })
+    </script>
+</body>
+
+</html>

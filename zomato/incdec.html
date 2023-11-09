@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qty: <span id="display">0</span></h1>
+    <button id="inc-btn">Inc</button>
+    <button id="dec-btn">Dec</button>
+
+    <!-- script code -->
+    <script>
+        let displayS =document.getElementById("display");
+        let btnInc =document.getElementById("inc-btn");
+        let btnDec =document.getElementById("dec-btn");
+
+        let qty=localStorage.getItem("qty") ? localStorage.getItem("qty") : 0;
+
+        function inc(){
+            qty++;
+            localStorage.setItem('qty',qty);
+            displayS.innerText=qty
+        }
+        
+        function dnc(){
+            qty--;
+            localStorage.setItem('qty',qty);
+            displayS.innerText=qty
+        }
+
+        btnIec.addEventListener('click',function()
+        {
+            inc();
+        });
+
+        btnDec.addEventListener('click',function()
+        {
+            dnc();
+        });
+
+    </script>
+</body>
+</html>
