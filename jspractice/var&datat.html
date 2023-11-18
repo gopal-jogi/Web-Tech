@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+<!-- script code -->
+<script>
+    //Gloabal veriabl
+    let a=10;
+    let b=20;
+    function main(a,b){
+        // Local veriable
+        c=30;
+        let s='abc'; //string
+        console.log(a+s,typeof s);
+        let Bo=true; //Boolean
+        console.log(a+Bo,typeof Bo);
+        let n=null; //null
+        console.log(n+a,typeof n);
+        let u=undefined;  //undefined 
+        let x; 
+        console.log(u+x,typeof u, typeof x);
+        let B=BigInt(12345678900981234567890123456789); //Bigint
+        console.log(a+B ,typeof B,typeof b); 
+    }
+    main(a,b)
+</script>
+</body>
+</html>

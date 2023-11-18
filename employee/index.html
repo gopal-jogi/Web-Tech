@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Information</title>
+  <!-- Bootstrap CSS -->
+  <link href="../Bs/bs/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-6">
+    <div class="row">
+      <div class="col ">       
+        <button class="btn btn-primary mr" onclick="showAllEmployees()">All Employees</button>
+        <button class="btn btn-success " onclick="filterByGender('male')">Male Employees</button>
+        <button class="btn btn-danger " onclick="filterByGender('female')">Female Employees</button>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col">
+        <table class="table">
+          <thead>
+            <tr class="bg-dark">
+              <th>Emp ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Gender</th>
+              <th>Active</th>
+            </tr>
+          </thead>
+          <tbody id="employeeTable">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="../Bs/bs/js/bootstrap.bundle.js"></script>
+
+  <script src="main.js"></script>
+    
+    
+</body>
+</html>

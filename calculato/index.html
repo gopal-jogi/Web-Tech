@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="../Bs/bs/css/bootstrap.min.css">
+  <style>
+    .calculator-card {
+      margin-top: 250px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card calculator-card">
+        <div class="card-header text-center">
+          <h1>Calculator</h1>
+        </div>
+        <div class="card-body">
+          <div class="mb-3">
+            <input type="text" class="form-control p-3" id="num1" placeholder="Enter number 1">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control p-3" id="num2" placeholder="Enter number 2">
+          </div>
+          <button class="btn btn-primary btn-lg m-4" onclick="performOperation('+')">+</button>
+          <button class="btn btn-primary btn-lg m-4" onclick="performOperation('-')">-</button>
+          <button class="btn btn-primary btn-lg m-4" onclick="performOperation('*')">*</button>
+          <button class="btn btn-primary btn-lg m-4" onclick="performOperation('/')">/</button>
+          <button class="btn btn-danger btn-lg m-4" onclick="clearFields()">C</button>
+        </div>
+        <div class="card-footer text-center p-3 " id="result">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../Bs/bs/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

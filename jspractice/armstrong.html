@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>armstron</title>
+</head>
+<body>
+    <script>
+        let num=155;
+        let s=0;
+        let l=String(num).length;
+        let copy=num;
+    
+        while (num>0){
+            let rem=num%10;
+            s+=rem**l;
+            num=parseInt(num/10);
+        }
+        console.log(s==copy ? "armstrong" : "not")
+   
+</script>
+</body>
+</html>

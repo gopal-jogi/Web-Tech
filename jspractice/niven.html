@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 12;
+        let n = 0;
+        niven(a,a,n);
+        function niven(a,b,n){
+            while (a!=0){
+                let rem=a%10;
+                n+=rem;
+                a=parseInt(a/10);
+            }
+            console.log(b%n==0?"niven":"not")
+        }
+    </script>
+</body>
+</html>

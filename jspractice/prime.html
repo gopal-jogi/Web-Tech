@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primr no</title>
+</head>
+<body>
+   <script> 
+    prime(7)
+    function prime(num,c=0){
+        for (let val=1;val<num+1;val++){
+            if (num%val==0){
+                ++c
+            }
+        }
+        console.log(c==2?"prime":"not")
+    }
+   </script>
+</body>
+</html>
